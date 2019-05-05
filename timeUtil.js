@@ -10,6 +10,9 @@ var timeUtil = {
 			var minutes = parseInt(timeComponent[1]);
 			var result = 0;
 			
+			if (minutes > 0){
+				return 'Cannot use fractional hours';
+			}
 			return result;
 		}
 		return 'Invalid time given, must be a String object in HH:MMAA format (e.g. 11:00PM)'
