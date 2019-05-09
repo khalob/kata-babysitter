@@ -37,6 +37,25 @@ var Util = {
 			return result;
 		}
 		throw 'Invalid time given, must be a String object in HH:MMAA format (e.g. 11:00PM).'
+	},
+	/**
+	 * Converts 'HH:MMAA' formatted strings into whole number values and returns them in an Object. Verifies times given are a proper range.
+	 *
+	 * @param startTime {string} - The start of the time range (e.g. '12:00AM')
+	 * @param endTime {string} - The end of the time range (e.g. '4:00AM')
+	 * @return range {Object} - Holds the startValue and endValue obtained from parsing and converting the time strings into a number value.
+	 */
+	getTimeRangeValues: function(startTime, endTime) {
+		var range = {
+			'startValue': this.parseTimeToNumberValue(startTime),
+			'endValue': this.parseTimeToNumberValue(endTime)
+		};
+		
+		if (range.endValue <  range.startValue) {
+			throw 'End time given was before start time given.';
+		}
+		
+		return range;
 	}
 };
 

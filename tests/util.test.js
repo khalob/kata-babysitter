@@ -45,3 +45,10 @@ test('Gets paid for full hours (no fractional hours)', () => {
 		Util.parseTimeToNumberValue('1:25AM')
 	}).toThrowError('Cannot use fractional hours.');
 });
+
+//Test Util.getTimeRangeValues
+test('Start time must come before end time', () => {
+	expect(function () {
+		Util.getTimeRangeValues('1:00AM', '12:00AM')
+	}).toThrowError('End time given was before start time given.');
+});
