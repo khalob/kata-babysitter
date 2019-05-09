@@ -25,4 +25,14 @@ Family.prototype.setHourlyPay = function (startTime, endTime, payRate) {
 	}
 };
 
+/**
+ * Gets the payrate of this family, per a given hour.
+ *
+ * @param hour {number} - Number value of the hour we want to get the payrate for (0, 1, 2..).
+ * @return {number} - Payrate for the given hour.
+ */
+Family.prototype.getPayRateOfHour = function (hour) {
+	return this.hourlyPay[hour];
+};
+
 module.exports = Family;
