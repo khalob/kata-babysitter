@@ -10,4 +10,19 @@ function Family(name) {
 	this.hourlyPay = []
 };
 
+/**
+ * Sets the payrate of a given time range for this family.
+ *
+ * @param startTime {string} - The start of the time range (e.g. '12:00AM')
+ * @param endTime {string} - The end of the time range (e.g. '4:00AM')
+ * @param payRate {number} - The amount of money a babysitter will recieve during this time range.
+ */
+Family.prototype.setHourlyPay = function (startTime, endTime, payRate) {
+	var range = Util.getTimeRangeValues(startTime, endTime);
+
+	for (var i=range.startValue; i<range.endValue; i++) {
+		this.hourlyPay[i] = payRate;
+	}
+};
+
 module.exports = Family;
