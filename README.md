@@ -1,12 +1,28 @@
 # Babysitter Kata
 
 ## Background
-This kata simulates a babysitter working and getting paid for one night.  The rules are pretty straight forward.
+This kata simulates a babysitter working and getting paid for one night. 
 
-## Feature
-*As a babysitter<br>
-In order to get paid for 1 night of work<br>
-I want to calculate my nightly charge<br>*
+## Building and Running Tests
+NodeJS and (NPM or YARN) are **required** and must be installed prior to building / testing.
+[NodeJS](https://nodejs.org/en/) | [NPM (already installed with NodeJS)](https://www.npmjs.com/get-npm) | [YARN](https://yarnpkg.com/)
+
+1. Install dependencies 
+```
+npm install
+```
+
+2. Run tests
+```
+npm run test
+```
+
+3. Run demo
+```
+node index.js
+```
+
+The demo is setup to show the requirements below (Family A, B, C, etc.), but the specifics can be modified within the index.js file. 
 
 ## Requirements
 The babysitter:
