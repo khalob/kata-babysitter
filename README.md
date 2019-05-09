@@ -1,11 +1,17 @@
 # Babysitter Kata
 
 ## Background
-This kata simulates a babysitter working and getting paid for one night. 
+This kata simulates a babysitter getting paid for a night spent babysitting. 
 
 ## Building and Running Tests
-NodeJS and (NPM or YARN) are **required** and must be installed prior to building / testing.
-[NodeJS](https://nodejs.org/en/) | [NPM (already installed with NodeJS)](https://www.npmjs.com/get-npm) | [YARN](https://yarnpkg.com/)
+NodeJS and (NPM or YARN) are **required** and must be installed prior to building / testing.<br/>
+
+<p align="center">
+  <b>Prerequisite Software Links:</b><br/>
+  <a href="https://nodejs.org/en/">NodeJS</a> |
+  <a href="https://www.npmjs.com/get-npm">NPM</a> |
+  <a href="https://yarnpkg.com/">YARN</a>
+</p>
 
 1. Install dependencies 
 ```
