@@ -1,0 +1,13 @@
+{
+  "name": "BabysitterKata",
+  "version": "1.0.0",
+  "description": "Calculate the total pay of a night spent babysitting, based on start time, end time, and family sat for.",
+  "main": "index.js",
+  "author": "Khalob Cognata",
+  "dependencies": {
+    "jest": "^24.5.0"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}
