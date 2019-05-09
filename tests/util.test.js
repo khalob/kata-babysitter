@@ -3,8 +3,8 @@ const Util = require('../class/util');
 //Test Util.parseTimeToNumberValue
 test('Starts no earlier than 5:00PM', () => {
 	expect(function () {
-		Util.parseTimeToNumberValue('4:00PM')}
-	).toThrowError('Cannot use a time before 5:00PM.');
+		Util.parseTimeToNumberValue('4:00PM')
+	}).toThrowError('Cannot use a time before 5:00PM.');
 });
 
 test('Leaves no later than 4:00AM', () => {
